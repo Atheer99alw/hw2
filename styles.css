@@ -1,3 +1,10 @@
-body {
-  background-color: #f5f5f5;
+#intro {
+  font-style: italic;
+  color: #555;
+}
+
+.highlight {
+  background-color: #ffe4e6;
+  padding: 4px;
+  font-weight: bold;
 }
