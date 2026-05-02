@@ -1,49 +1,47 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Projects | Atheer Website</title>
 </head>
-<script src="scripts.js"></script>
+
 <body id="top">
 
-    <!-- Header -->
     <header>
         <h1>Atheer Website</h1>
 
         <nav role="navigation" aria-label="Main navigation">
-            <a href="index.html">Home</a> |
-            <a href="cv.html">CV</a> |
-            <a href="projects.html">Projects</a> |
+            <a href="index.html">Home</a>
+            <a href="cv.html">CV</a>
+            <a href="projects.html">Projects</a>
             <a href="contact.html">Contact</a>
         </nav>
 
         <hr>
     </header>
 
-    <!-- Main Content -->
     <main>
 
         <h2>Projects</h2>
 
-        <!-- Project 1 -->
         <article aria-labelledby="project1-title">
             <h3 id="project1-title">Project 1: Seam Carving (Image Resizing)</h3>
 
-            <p>
+            <p id="project1-desc">
                 A project to resize images using seam carving and compare approaches 
                 like Dynamic Programming and Greedy methods.
             </p>
+
+            <button onclick="toggleDescription('project1-desc')">Show / Hide Description</button>
 
             <p>
                 <time datetime="2025-04">April 2025</time>
             </p>
 
             <figure>
-                <!-- IMPORTANT: Image must be inside images folder -->
+                <img src="images/OIP.webp"
                      alt="Seam Carving Project Image"
                      width="500">
                 <figcaption>Seam Carving image resizing</figcaption>
@@ -59,27 +57,19 @@
             <hr>
         </article>
 
-
-        <!-- Project 2 -->
         <article aria-labelledby="project2-title">
             <h3 id="project2-title">Project 2: Agentic AI Shield (Voice Security)</h3>
 
-            <p>
+            <p id="project2-desc">
                 A prototype system to defend voice assistants against adversarial 
                 and ultrasonic attacks using interaction verification and security checks.
             </p>
 
+            <button onclick="toggleDescription('project2-desc')">Show / Hide Description</button>
+
             <p>
                 <time datetime="2026-02">February 2026</time>
             </p>
-
-            <figure>
-                <!-- You can upload a second image and change the name here -->
-                <img src="images/OIP.webp"
-                     alt="Agentic AI Shield Project Image"
-                     width="500">
-                <figcaption>Voice security system prototype</figcaption>
-            </figure>
 
             <p>
                 Repo/Demo:
@@ -96,11 +86,11 @@
 
     </main>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2026 Atheer Alwabali</p>
         <p>Email: <a href="mailto:atheeralw@gmail.com">atheeralw@gmail.com</a></p>
     </footer>
 
+    <script src="scripts.js"></script>
 </body>
 </html>
